@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #2196f3;
+  --color-black: #212121;
+  --color-grey-900: #2f303a;
+  --color-grey-500: #757575;
+  --color-white: #ffffff;
+  --color-white-opacity: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-black);
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.accent {
+  color: var(--color-primary);
+}
+
+.link-header {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.link-header.contact {
+  color: var(--color-grey-500);
+}
+
+.link-header:focus,
+.link-header:hover {
+  color: var(--color-primary);
+}
+
+.dark {
+  background-color: var(--color-grey-900);
+}
+
+.heading-primary {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.features .heading-tertiary {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.team .heading-tertiary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.portfolio .heading-tertiary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.plain-text {
+  font-weight: 400;
+  color: var(--color-grey-500);
+  font-size: 16px;
+}
+
+.features .plain-text {
+  font-size: 14px;
+}
+
+.btn-default {
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-default:focus,
+.btn-default:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.footer {
+  color: var(--color-white);
+  background-color: var(--color-grey-900);
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.address a {
+  color: var(--color-white-opacity);
+}
