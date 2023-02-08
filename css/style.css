@@ -3,6 +3,7 @@
   --color-black: #212121;
   --color-grey-900: #2f303a;
   --color-grey-500: #757575;
+  --color-grey-100: #f5f4fa;
   --color-white: #ffffff;
   --color-white-opacity: rgba(255, 255, 255, 0.6);
 }
@@ -13,6 +14,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -20,6 +28,44 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header > .container {
+  display: flex;
+  align-items: center;
+}
+
+header > .container > :first-child {
+  margin-right: 93px;
+}
+
+header > .container > :last-child {
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.bg-grey {
+  background-color: var(--color-grey-100);
+}
+
+.bg-black {
+  background-color: var(--color-grey-900);
 }
 
 .logo {
@@ -30,6 +76,16 @@ ul {
 
 .accent {
   color: var(--color-primary);
+}
+
+ul.nav-container {
+  display: flex;
+  gap: 46px;
+}
+
+ul.contact-container {
+  display: flex;
+  gap: 50px;
 }
 
 .link-header {
@@ -47,10 +103,6 @@ ul {
   color: var(--color-primary);
 }
 
-.dark {
-  background-color: var(--color-grey-900);
-}
-
 .heading-primary {
   font-weight: 900;
   font-size: 44px;
@@ -66,6 +118,7 @@ ul {
   font-size: 36px;
   line-height: 1.15;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .features .heading-tertiary {
