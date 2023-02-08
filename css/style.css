@@ -4,6 +4,9 @@
   --color-grey-900: #2f303a;
   --color-grey-500: #757575;
   --color-grey-100: #f5f4fa;
+  --color-grey-80: #f5f4fa;
+  --color-grey-50: #ececec;
+  --color-grey-30: #eeeeee;
   --color-white: #ffffff;
   --color-white-opacity: rgba(255, 255, 255, 0.6);
 }
@@ -36,15 +39,26 @@ button {
   color: inherit;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+header {
+  border-bottom: 1px solid var(--color-grey-50);
+}
+
 header > .container {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 header > .container > :first-child {
@@ -149,10 +163,26 @@ ul.contact-container {
   font-size: 14px;
 }
 
-.btn-default {
+.filter {
+  margin-bottom: 50px;
+}
+
+.filter li:nth-last-child(n + 2) .btn {
+  margin-right: 8px;
+  color: red;
+}
+
+.btn {
+  padding: 12px 22px;
   font-weight: 500;
   font-size: 16px;
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.btn-default {
+  background: var(--color-grey-80);
 }
 
 .btn-default:focus,
@@ -162,14 +192,21 @@ ul.contact-container {
 }
 
 .btn-primary {
+  display: block;
+  margin: auto;
   background-color: var(--color-primary);
   color: var(--color-white);
-  cursor: pointer;
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: var(--color-white);
   background-color: var(--color-grey-900);
+}
+
+.footer .logo {
+  margin-bottom: 20px;
 }
 
 .address {
@@ -181,4 +218,43 @@ ul.contact-container {
 
 .address a {
   color: var(--color-white-opacity);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.flex-grid-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+ul.flex-grid-3 > li {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+ul.flex-grid-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+ul.flex-grid-4 > li {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.card-team .card-header {
+  padding: 30px;
+  text-align: center;
+  background: var(--color-white);
+}
+
+.card-product .card-header {
+  padding: 24px;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-30);
+  border-top: none;
 }
